@@ -94,6 +94,14 @@ int main()
 	AllocateMemory(&ar, size); 
 	RandomFillArray(ar, size);
 	PrintArray(ar, size);
+	int element;
+	cout << "input element: ";
+	cin >> element;
+	
+	addElement(&ar, &size, element);
+	PrintArray(ar, size);
+	removeElement(&ar, &size);
+	PrintArray(ar, size);
 }
 
 
